@@ -1,0 +1,61 @@
+Naming Convention nedir?
+**
+Naming Convention Javada metodlara, siniflara, degiskenlere
+ve paketlere isim verirken uyduğumuz bazi geleneklerdir.
+Bu geleneklere uymak zorunda olmasak da bu geleneklere uymak
+projemizi daha sonradan inceleyecek gelistiricilere oldukca 
+kolaylik saglayacaktir.
+**
+
+Degisken Isimleri:
+**
+->Ilk kelime kucuk harf ile ikinci kelime buyuk harf ile baslamali:
+ornek: int birinciOgrenciNotu = 85;
+->Degisken ismi degiskenin ne is yaptigini iyi vurgulamali.
+-> _ isareti cok nadir kullanilmali.
+->For ve While dongulerinde degiskenler genelde i,j,k gibi harfler
+olmali(Fortrandan kalma bir aliskanlik).
+->ForEach Dongulerinde temp gibi degisken isimleri kullanilmali.
+->Turkce karakter kullanilmali.
+Ornekler: ogrenciNumarasi, hesapNo, hayvanIsmi
+**
+
+Sabit Degisken Isimleri:
+**
+->Programlarimizda degerleri degismeyen degiskenler varsa 
+bu degiskenlerin isimlerinin her harfi buyuk olmali.
+-> _ kullanilmali
+->Ornekler: PI_SAYISI, AVOGADRO_SAYISI, MAX_SIZE
+**
+
+Method ve Fonksiyon Isimleri:
+**
+->Ilk kelime kucuk harf ile, ikinci kelime buyuk harf ile baslamali.
+->Fiil ifadesi barindirmali.
+->Ismi yapacagi is ile alakali olmal.
+->Turkce karakter kullanilmamali.
+->setter ve getter metodlarin isimleri set ve get 
+kelimeleri barindirmali
+->degerleriYazdir(), getNumara(), setNumara(), puanHesapla()
+**
+
+Class, Abstract Class ve Interface Isimleri:
+**
+->Ilk kelime ve ikinci kelime buyuk harf ile baslamali.
+->Yaptigi isi iyi vurgulamali.
+->Fiil degil, isim olmali.
+->Interfacelerin isim icerdikleri metodlari anlatmali.
+->LinkedList, AdayOgrenci, View.OnClickListener
+**
+
+Paket Isimleri:
+**
+->Kucuk harf ile baslamali.
+->Benzersiz bir isim verilmeli.
+->Projenizin websitesi "www.mustafamurat.com/ners" ise paket 
+ismi "com.mustafamurat.ners" olmali.
+->"-" yernine "_" kullanilmali.
+->Paket ismi Javadaki anahtar kelimeleri iceriyorsa veya degiskenlere
+verme kurallarina aykiriysa "_" ile duzeltme yapilmali.
+->while.xyz.com ---> com.xyz._while
+**

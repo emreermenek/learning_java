@@ -1,0 +1,11 @@
+https://initialcommit.com/blog/how-to-create-a-jar-file-with-a-package-structure
+
+This tutorial allows you to archive a list of compiled classes residing under a particular package in the form of a JAR file.
+
+Suppose you have 2 classes A.class & B.class which resides under com.programmer.gate. In order to export a JAR file out of these 2 classes without losing the package route, you must do the following:
+
+Go the root folder of the package, in our case it’s com.
+Press shift and right-click, then open cmd.
+Run this command: jar cvf test.jar .
+The dot(.) used at the end of the above command informs the jar operation to package the classes starting from the current path.
+After running the command, you will get a jar file called test.jar besides the com folder.

@@ -1,0 +1,31 @@
+Paket
+
+Paket Kullanmanin Onemi:
+**
+->Dunya uzerinde pek cok java gelistiricisi oldugu icin classlarim
+ve interfaclerin adlarinin cakismamasi imkansiz hale geliyor.
+->Ayni zamanda buyuk projelerde benzer class isimlerinin olmasi da 
+kacinilmaz oluyor.
+**
+
+Paket Nedir?
+**
+->Paketler birbiriyle iliskili classlarin, interfacelerin birarada
+bulundugu bir konteynir gorevi gorur. Yani biz bir cok paket 
+olusturarak iliskili classlari bu paketlerde depolayabiliriz.
+->Paketler sayesinde, biz bir projenin icinde ayni isimden
+bir cok classi farkli paketlerin icinde depolayabiliriz.
+**
+
+Paket Kullanmanin Avantajlari:
+**
+->Paketler sayesinde gelistiriciler iliskili classlari ve 
+interfaceleri kolaylikla bulabilir. Ayrica paket isimlerinin
+anlamli olmasi da bir paketteki classlarin ve interfacelerin
+gorevlerini anlatarak gelistiricilerin islerini kolaylastirmasi
+acisindan onemlidir.
+->Paketler kullanimi sayesinde class ve interface isimlerinin
+cakismasi en aza indirilmis olur.
+->Paket icindeki classlar baska paketteki classlara bazi 
+sinirlandirmalar haricinden kolaylikla erisilebilir.
+**
