@@ -1,0 +1,38 @@
+Java Collection Framework:
+
+Framework Nedir?
+**
+->Framework yazilim gelistiricilerin kullandigi onceden hazirlanmis kutuphanelerin 
+bulundugu ve bunlara yenilerini ekleyebilecegi yapilarin adidir.
+->Gelismis frameworklerde form kontrolu, veri tabani baglantisi, kullanici giris cikis,
+mail atma, tema motoru gibi kutuphaneler mevcuttur.
+->Ayrica bu kutuphaneler kendi icinde bir cok Somut Sinif(Concrete Class), Soyut Sinif(Abstract Class),
+Interface ve metod barindirir.
+**
+
+Collection Framework nedir?
+**
+->Benzer verileri grup halinde tutmak ve onlar uzerinde islemler yapmak yazilim gelistirirken bizim
+sikca karsilastigimiz problemlerdir.
+->Ornek: Cok sayida tamsayi siralamak.
+->Collection Framework bu gibi problemleri ve islemleri kolayca yapmamizi saglayan, icinde bir cok somut sinif,
+soyut sinif, interface ve metod bulunduran Java gelistiricileri tarafindan tasarlanmis bir frameworktur.
+**
+
+Collection Objesi
+**
+->Collection Objesi icinde baska objeler barindiran bir objedir ve Collection Frameworkte bulunan Collection
+bir interface olup icinde benzer turden objeleri liste halinde, sirali halde ve benzersiz olacak sekilde 
+barindiracak objelerin temek metodlarini(add, addAll, remove, clear) belirler.
+**
+
+Collection Framework Ozellikleri
+**
+->Collection Framework icinde bir cok interface ve class bulundurur.
+->Verilerin liste halinde tutulmasi icin Queue interface'i, benzersiz
+tutulmasi icin Set interface'i bulunur. Bu 3 interface de Collection interfaceden turerler.
+->Ancak Map Interface'i Collection Interface ile baglantili olmamasina ragmen Collection Framework'un  
+icinde bulunan kullanisli bir interfacedir.
+->Bu interface'i uygulayan veya implemente eden somut siniflar ile bu framework tamamlanir.
+(Ornek: ArrayList, LinkedList vs.)
+**
