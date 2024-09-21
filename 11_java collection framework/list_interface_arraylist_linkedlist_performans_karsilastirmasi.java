@@ -20,7 +20,7 @@ public class list_interface_arraylist_linkedlist_performans_karsilastirmasi {
         baslangic = System.currentTimeMillis();
         for(int i = 0;i<100000;i++){
             list.add(0,i); //linkedlist avantajlidir. ciddi bir fark vardir.
-            //ist.add(i); //arraylist avantajlidir. az bir fark vardir.
+            //list.add(i); //arraylist avantajlidir. az bir fark vardir.
         }
         bitis = System.currentTimeMillis();
 

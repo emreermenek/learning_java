@@ -15,7 +15,7 @@ class Playerrr implements Comparable<Playerrr>{
     public int compareTo(Playerrr o) {
         if(o.id > this.id){
             return -1;
-        }else if(o.id > this.id){
+        }else if(o.id < this.id){
             return 1;
         }
         return 0;
@@ -35,6 +35,11 @@ class Playerrr implements Comparable<Playerrr>{
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "| | | Isim: " + isim + ", id: " + id;
     }
 
 }
@@ -108,7 +113,7 @@ public class queueInterface_priorityQueue {
         queue.offer(new Playerrr("Mert", 100));
 
         while(!queue.isEmpty()){
-            System.out.println("Eleman cikartiliyor: " + queue.poll().getId());
+            System.out.println("Eleman cikartiliyor: " + queue.poll());
         }
 
         
