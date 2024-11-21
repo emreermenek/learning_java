@@ -28,5 +28,7 @@ public class mini_proje_map_kullanarak_bir_cumlenin_harf_frekansini_bulma {
             System.out.println("Harf: " + entry.getKey() + " " + entry.getValue() + " kere cumle icinde geciyor.");
         }
 
+        sc.close();
+
     }
 }
