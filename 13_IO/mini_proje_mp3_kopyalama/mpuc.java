@@ -40,6 +40,9 @@ public class mpuc {
     public static void main(String[] args) {
         //bir array list kullanip dosyanin tum icerigini ona aticaz.
         dosyaOku();
+        long baslangic = System.currentTimeMillis();
         kopyala("mars2.mp3");
+        long bitis = System.currentTimeMillis();
+        System.out.println("Kopyalama islemi "+(bitis-baslangic) / 1000+" saniye aldi!");
     }
 }
