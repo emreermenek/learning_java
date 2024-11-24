@@ -21,7 +21,7 @@ public class ProducerConsumer {
                 queue.put(value);
                 System.out.println("Producer uretiyor: "+ value);
             } catch (InterruptedException e) {
-                System.out.println("Veri uretikirken soru olustu!");
+                System.out.println("Veri uretilirken soru olustu!");
             }
         }
     }
