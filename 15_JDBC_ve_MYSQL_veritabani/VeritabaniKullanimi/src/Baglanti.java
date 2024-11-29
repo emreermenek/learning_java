@@ -1,6 +1,5 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
+
 /*
 * Bu dersten once xampp kurduk sonra mysql-connector-jari librariese ekledik.
 * Devaminda demo adli bir database actik, bu kod calismadan once de
@@ -19,6 +18,27 @@ public class Baglanti {
 
     private Connection con = null;
 
+    private Statement statement = null;
+
+    public void calisanlariGetir(){
+//        String sorgu = "Select * from calisanlar"; //calisanlardaki butun(*) verileri al
+        String sorgu = "Select * from calisanlar where id > 2"; //calisanlardaki id'si 2 den buyuk olanlarin butun(*) verileri al
+
+        try {
+            statement = con.createStatement();
+            ResultSet resultSet = statement.executeQuery(sorgu); //eger veritabaninda bir guncelleme yapmiyosak direk bu metodu kullanicaz
+            while(resultSet.next()){
+                int id = resultSet.getInt("id");
+                String ad = resultSet.getString("ad");
+                String soyad = resultSet.getString("soyad");
+                String email = resultSet.getString("email");
+
+                System.out.println("Id : "+id+" Ad : "+ad+" Soyad : "+soyad+" Email : "+email );
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
     public Baglanti(){
         String url = "jdbc:mysql://" + host + ":" + port + "/" + db_ismi;
 
@@ -38,5 +58,6 @@ public class Baglanti {
 
     public static void main(String[] args) {
         Baglanti b = new Baglanti();
+        b.calisanlariGetir();
     }
 }
