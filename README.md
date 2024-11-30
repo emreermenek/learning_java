@@ -61,3 +61,10 @@ Bu repo, aşağıdaki kursun bir rehberi olarak hazırlanmıştır:
 
 ---
 
+## Notlar
+
+1. **Bölüm 15**: IntelliJ IDEA kullanımı daha uygun bulundu.  
+2. **Bölüm 16**: `JFrameForm` kullanımı için NetBeans tercih edildi. Eğer NetBeans'te yeni bir `JFrameForm` oluşturduktan sonra **Run File** işlemini gerçekleştiremiyorsanız, projeyi **Java with Ant** yapılandırmasıyla oluşturmayı deneyin.
+
+---
+
