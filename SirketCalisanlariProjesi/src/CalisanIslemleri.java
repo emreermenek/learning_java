@@ -80,4 +80,52 @@ public class CalisanIslemleri {
          }
         return null;
     }
+    
+    public void calisanEkle(String ad, String soyad, String departman, String maas){
+        
+         try {
+             String sorgu = "Insert Into calisanlar (ad, soyad, departman, maas) Values(?,?,?,?)";
+             preparedStatement = con.prepareStatement(sorgu);
+             
+             preparedStatement.setString(1, ad);
+             preparedStatement.setString(2, soyad);
+             preparedStatement.setString(3, departman);
+             preparedStatement.setString(4, maas);
+             
+             preparedStatement.executeUpdate();
+            
+         } catch (SQLException ex) {
+             Logger.getLogger(CalisanIslemleri.class.getName()).log(Level.SEVERE, null, ex);
+         }
+        
+    }
+    
+    public void calisanGuncelle(int id, String ad, String soyad, String departman, String maas){
+         try {
+             String sorgu = "Update calisanlar set ad = ? , soyad = ? , departman = ? , maas = ? where id = ?";
+             preparedStatement = con.prepareStatement(sorgu);
+            
+             preparedStatement.setString(1, ad);
+             preparedStatement.setString(2, soyad);
+             preparedStatement.setString(3, departman);
+             preparedStatement.setString(4, maas);
+             preparedStatement.setInt(5, id);
+             
+             preparedStatement.executeUpdate();
+         } catch (SQLException ex) {
+             Logger.getLogger(CalisanIslemleri.class.getName()).log(Level.SEVERE, null, ex);
+         }
+    }
+    
+    public void calisanSil(int id){
+        
+         try {
+             String sorgu = "Delete from calisanlar where id = ?";
+             preparedStatement = con.prepareStatement(sorgu);
+             preparedStatement.setInt(1, id);
+             preparedStatement.executeUpdate();
+         } catch (SQLException ex) {
+             Logger.getLogger(CalisanIslemleri.class.getName()).log(Level.SEVERE, null, ex);
+         }
+    }
 }
